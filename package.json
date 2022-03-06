@@ -3,7 +3,7 @@
   "version": "0.0.7",
   "main": "src/main.js",
   "scripts": {
-    "build": "node src/main.js"
+    "build": "tsc && node src/main.js"
   },
   "license": "MIT",
   "dependencies": {

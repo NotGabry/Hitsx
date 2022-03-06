@@ -6,4 +6,4 @@ RUN npm install
 
 COPY . /
 
-CMD ["tsc", "&&", "node", "src/main.js"]
+CMD ["npm", "build"]
