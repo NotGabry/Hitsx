@@ -11,7 +11,7 @@
 It's pretty simple.
 Add this to your HTML.  
 ```html
-<script src="https://hitsx.up.railway.app/APIs/fetch.js" crossorigin="anonymous"></script>
+<script src="https://hitsx.up.railway.app/fetch.min.js" crossorigin="anonymous"></script>
 ```
 
 <h2> 📅 Info </h2>
