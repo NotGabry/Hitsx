@@ -97,15 +97,9 @@ const checkHits = async (res: Response, hits_: number) => {
 
     await ctx.fillText(arr.join(`${space}`), hits_.toString().length < 5 ? 105 : 98, 35)
 
-<<<<<<< Updated upstream
-    let buffer = canvas.toBuffer('image/png')
-    await fs.writeFileSync(`./Assets/${r}.png`, buffer)
-    await delay(150)
-=======
     let buffer = await canvas.toBuffer('image/png')
     await fs.writeFileSync(`./Assets/${r}.png`, buffer)
     await res.contentType(`image/png`)
->>>>>>> Stashed changes
     await res.sendFile(path.join(`${__dirname}/Assets/${r}.png`))
 }
 const stringToArray = async (element: string) => {
