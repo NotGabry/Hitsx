@@ -17,7 +17,7 @@ Add this to your HTML.
 
 Add this tag to your HTML
 ```html
-<img src="https://hitsx.up.railway.app/api/fetch?site=https://gabry.cf">
+<img src="https://hitsx.up.railway.app/api/fetch?site=<your website>">
 ```  
 
 <h2> 📅 Info </h2>
@@ -25,4 +25,4 @@ Add this tag to your HTML
 Your badge will appear instantly with the current clicks.  
 You'll see something like this  
 <br>
-<img width="80px" height="34px" src="https://hitsx.up.railway.app/api/fetch?site=https://gabry.cf">
+<img width="85px" height="34px" src="https://hitsx.up.railway.app/api/fetch?site=https://gabry.cf">
