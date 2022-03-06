@@ -99,6 +99,7 @@ const checkHits = async (res: Response, hits_: number) => {
 
     let buffer = canvas.toBuffer('image/png')
     await fs.writeFileSync(path.join(`${__dirname}/Assets/${r}.png`), buffer)
+    await delay(150)
     await res.sendFile(path.join(`${__dirname}/Assets/${r}.png`))
 }
 const stringToArray = async (element: string) => {
