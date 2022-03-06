@@ -37,7 +37,7 @@ app.use('/api/fetch', async (req, res) => {
         if (err) console.log(err)
         if (!data) {
             return res.json({ success: false, message: 'URL is not verified. Pls read our docs'})
-        } else if (data && !data.Registered) {
+        } else if (data && !data.Verified) {
             return res.json({ success: false, message: 'URL is not verified. Pls read our docs'})
         } else {
             await checkHits(res, data.BadgeHits)
