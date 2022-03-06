@@ -98,7 +98,7 @@ const checkHits = async (res: Response, hits_: number) => {
     await ctx.fillText(arr.join(`${space}`), hits_.toString().length < 5 ? 105 : 98, 35)
 
     let buffer = canvas.toBuffer('image/png')
-    await fs.writeFileSync(path.join(`${__dirname}/Assets/${r}.png`), buffer)
+    await fs.writeFileSync(`./Assets/${r}.png`, buffer)
     await delay(150)
     await res.sendFile(path.join(`${__dirname}/Assets/${r}.png`))
 }
