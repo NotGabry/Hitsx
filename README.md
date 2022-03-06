@@ -1,6 +1,6 @@
 <h1 align="center"> <code>Hitsx</code>  </h1>
 
-<p align="center"> <strong> 🎯 REST API To Create A Custom Badge </strong> </p>
+<p align="center"> <strong> ⚠️ API IS NOT CURRENTLY WORKING </strong> </p>
 <p> 
   
   Taking inspiration from [mod.land](https://mod.land) and [js.org](https://js.org).  We provide a free monitoring websites service.  Check Your Website's Clicks With One Easy And Simple API
