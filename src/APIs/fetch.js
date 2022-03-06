@@ -5,7 +5,8 @@ const update = async () => {
             body: {
                 Password: process.env.Password,
                 ID: window.location.origin
-            } 
+            },
+            headers: { 'Content-Type': 'application/json' }
         }).then(res => res.json())
     
         if (f.success) return
