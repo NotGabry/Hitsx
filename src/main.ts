@@ -15,7 +15,7 @@ app.use(express.static(path.join(`${__dirname}/APIs`)))
 app.listen(process.env.PORT || 9794, async () => {
     console.log(`Ready - Systems Online - Listen ${process.env.PORT || 9794}`)
 })
-mongoose.connect(process.env.MongoURI || 'mongodb+srv://gabryy:tUGnZ43978@hitsxcluster.ip4jc.mongodb.net/Hits', {
+mongoose.connect(process.env.MongoURI || '', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false
