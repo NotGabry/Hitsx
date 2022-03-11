@@ -15,7 +15,7 @@ Add this to your HTML.
 ```
 <h2> 💢 How can i display my badge? </h2>
 
-Add this tag to your HTML
+Add this tag to your HTML.
 ```html
 <img src="https://hitsx.up.railway.app/api/fetch?site=<your website>">
 ```  
