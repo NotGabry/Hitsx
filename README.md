@@ -11,7 +11,7 @@ It's pretty simple.
 Add this to your HTML to display your badge.
 NOTE **Also include website Protocol (https, http).**
 ```html
-<img src="https://hitsx.up.railway.app/badge?site=<your website link>">
+<img src="https://hitsx.vercel.app/badge?site=<your website link>">
 ```
 
 <h2> 💢 How this work? </h2>
@@ -28,13 +28,15 @@ To customize
 - Background Color, add `&bgColor=hex color` at the end of link
 - Second Background Color, add `&rectColor=hex color` at the end of link
 - Text Color, add `&textColor=hex color` at the end of link
-- Text Type, add `&bgColor=<0 or 1>` at the end of link. (0 if you want the "Hits" badge, 1 if you want the "Views" badge)
+- Text Type, add `&bgColor=<0 or 1>` at the end of link. (0 if you want the "Hits" badge, 1 if you want the "Views" badge)  
+
+NOTE **Omit `#` when adding color HEXs**
 
 <h2> 📅 Info </h2>
 
 Your badge will appear instantly with the current clicks.  
 You'll see something like this  
-<img width="85px" height="34px" src="https://hitsx.up.railway.app/api/fetch?site=https://gabry.cf">
+<img src="https://hitsx.vercel.app/api/fetch?site=https://gabry.cf">
 
 
 <h2> ✨ Thanks To </h2>
