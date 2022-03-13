@@ -3,7 +3,8 @@
   "version": "0.0.8",
   "main": "src/main.js",
   "scripts": {
-    "build": "tsc && node src/main.js"
+    "build": "tsc && node src/main.js",
+    "vercel-build": "yum install libuuid-devel libmount-devel && cp /lib64/{libuuid,libmount,libblkid}.so.1 node_modules/canvas/build/Release/"
   },
   "license": "MIT",
   "dependencies": {
