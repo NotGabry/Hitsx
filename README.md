@@ -1,6 +1,5 @@
 <h1 align="center"> <code>Hitsx</code>  </h1>
-
-<p align="center"> <strong> ⚠️ API IS NOT CURRENTLY WORKING </strong> </p>
+<p align="center"> <strong> 🎯 Clicks Badge Made Easly </strong> </p>
 <p> 
   
   Taking inspiration from [mod.land](https://mod.land) and [js.org](https://js.org).  We provide a free monitoring websites service.  Check Your Website's Clicks With One Easy And Simple API
@@ -8,21 +7,41 @@
 <hr>
 <h2> 💎 How To Use? </h2>
 
-It's pretty simple.
-Add this to your HTML.  
+It's pretty simple.  
+Add this to your HTML to display your badge.
+NOTE **Also include website Protocol (https, http).**
 ```html
-<script src="https://hitsx.up.railway.app/fetch.min.js" crossorigin="anonymous"></script>
+<img src="https://hitsx.up.railway.app/badge?site=<your website link>">
 ```
-<h2> 💢 How can i display my badge? </h2>
 
-Add this tag to your HTML.
-```html
-<img src="https://hitsx.up.railway.app/api/fetch?site=<your website>">
-```  
+<h2> 💢 How this work? </h2>
+
+It's very easy, every time that the badge is loaded our API add 1 to the total count of hits.  
+You can also use your custom fetch system, for example when a user click the button you can make a custom request to our API.  
+If you want to use our API make a **POST** request to `https://hitsx.vercel.app/api/fetch` and add in the body an item named `ID` with your website's URL.  
+NOTE **If you use your custom fetch system make sure that when you display your badge add `&devOptions=nofetch` at the end of link's path**
+
+<h2> 💻 Customization </h2>
+
+You can customize background color, second background color, text color and also text content.  
+To customize
+- Background Color, add `&bgColor=hex color` at the end of link
+- Second Background Color, add `&rectColor=hex color` at the end of link
+- Text Color, add `&textColor=hex color` at the end of link
+- Text Type, add `&bgColor=<0 or 1>` at the end of link. (0 if you want the "Hits" badge, 1 if you want the "Views" badge)
 
 <h2> 📅 Info </h2>
 
 Your badge will appear instantly with the current clicks.  
 You'll see something like this  
-<br>
 <img width="85px" height="34px" src="https://hitsx.up.railway.app/api/fetch?site=https://gabry.cf">
+
+
+<h2> ✨ Thanks To </h2>
+
+Vercel to his beautiful hosting.  
+MongoDB to his very useful database system.  
+GitHub to his save-life backup file system.  
+
+
+<img src="https://img.shields.io/badge/HOSTED%20ON%20VERCEL-000000?style=for-the-badge&logo=Vercel&labelColor=000"> <img src="https://img.shields.io/badge/LICENSE-MIT-000?style=for-the-badge&color=000&labelColor=000"> <img src="https://img.shields.io/badge/MongoDB-ALL%20GOOD-000?style=for-the-badge&color=000&labelColor=000">

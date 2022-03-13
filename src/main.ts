@@ -1,4 +1,4 @@
-import express, { Response } from 'express';
+import express, { Application, Response } from 'express';
 import bodyParser from 'body-parser';
 import path from 'path';
 import { createCanvas } from 'canvas';
@@ -11,7 +11,7 @@ import isURL from 'is-url';
 import isHex from 'is-hexcolor';
 import db from 'quick.db';
 
-const app = express()
+const app: Application = express()
 
 app.listen(process.env.PORT || 9794, async () => {
     console.log(`Ready - Systems Online - Listen ${process.env.PORT || 9794}`)
