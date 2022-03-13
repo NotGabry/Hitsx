@@ -28,7 +28,7 @@ To customize
 - Background Color, add `&bgColor=hex color` at the end of link
 - Second Background Color, add `&rectColor=hex color` at the end of link
 - Text Color, add `&textColor=hex color` at the end of link
-- Text Type, add `&bgColor=<0 or 1>` at the end of link. (0 if you want the "Hits" badge, 1 if you want the "Views" badge)  
+- Text Type, add `&textType=<0 or 1>` at the end of link. (0 if you want the "Hits" badge, 1 if you want the "Views" badge)  
 
 NOTE **Omit `#` when adding color HEXs**
 
