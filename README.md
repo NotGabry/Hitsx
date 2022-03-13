@@ -41,7 +41,7 @@ You'll see something like this
 
 <h2> ✨ Thanks To </h2>
 
-Vercel to his beautiful hosting.  
+Railway to his beautiful hosting.  
 MongoDB to his very useful database system.  
 GitHub to his save-life backup file system.  
 
