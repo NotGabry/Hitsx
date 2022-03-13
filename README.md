@@ -37,7 +37,7 @@ NOTE **Omit `#` when adding color HEXs**
 Your badge will appear instantly with the current clicks.  
 You'll see something like this  
 <br>
-<img src="https://hitsx.up.railway.app/api/badge?site=https://github.com/Gabry-76/Hitsx?bgColor=000&rectColor=000">
+<img src="https://hitsx.up.railway.app/api/badge?site=https://github.com/Gabry-76/Hitsx&bgColor=000&rectColor=000">
 
 
 <h2> ✨ Thanks To </h2>
