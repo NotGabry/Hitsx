@@ -9,9 +9,9 @@ import Hits from './schemes/hits';
 import { HitsInterface } from './Types/interfaces';
 import isURL from 'is-url';
 import isHex from 'is-hexcolor';
-import db from 'quick.db';
 
 const app: Application = express()
+const db: Map<string, number> = new Map()
 
 app.listen(process.env.PORT || 9794, async () => {
     console.log(`Ready - Systems Online - Listen ${process.env.PORT || 9794}`)
@@ -132,11 +132,11 @@ const stringToArray = async (element: string): Promise<String[]> => {
     return arr
 }
 const rateLimits = async (ID: string): Promise<Boolean> => {
-    let a: number = await db.fetch(`ratelimits.${ID}`)
+    let a: number = await db.get(`ratelimits.${ID}`)
     if (!a) await db.set(`ratelimits.${ID}`, 0)
-    else await db.add(`ratelimis.${ID}`, 1)
+    else await db.set(`ratelimis.${ID}`, a++)
 
-    let refetch: number = await db.fetch(`ratelimits.${ID}`)
+    let refetch: number = await db.get(`ratelimits.${ID}`)
     
     if (refetch && refetch >= 4) return true
 }
